@@ -1,13 +1,15 @@
-# Forex-Trade-Analysis
+# Forex Trade Analysis
 
-#### Data Cleaning & Preparation Scripts:
-Python: 
-"data_prep.py": clean and convert source datasets into a consistent format for staging in the data warehouse</br> 
-"push_cleansed_dim_data.py": load cleansed dimensions into the SQL data warehouse</br> 
-"push_cleansed_fact_data.py": load cleansed facts into the SQL data warehouse</br> 
+A data engineering and analytics project designed to clean, transform, and model forex trading data for performance insights.
 
-#### Data Transformation Scripts:
-SQL: 
-"staging_ddl.sql": create schemas for staging, transformatons and staging tables</br> 
-"core_dml.sql": create transformation objects</br> 
-"access.sql": create final analytic-ready transformations</br> 
+### Data Cleaning & Preparation Scripts
+**Python**
+- **data_prep.py** – Cleans and standardises raw forex datasets into a consistent format for staging in the data warehouse.  
+- **push_cleansed_dim_data.py** – Loads cleansed dimension tables into the SQL data warehouse.  
+- **push_cleansed_fact_data.py** – Loads cleansed fact tables into the SQL data warehouse.  
+
+### Data Transformation Scripts
+**SQL**
+- **staging_ddl.sql** – Defines schemas and creates staging and transformation tables.  
+- **core_dml.sql** – Implements transformation logic and builds core data models.  
+- **access.sql** – Creates analytic-ready views for reporting, KPI calculation, and performance analysis.  
